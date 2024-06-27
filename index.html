@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Puzzle Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Match the puzzle within 100 seconds</h1>
+        <div class="btn-result">
+            <p id="result">Click the "Start" Button to start</p>
+            <button id="btnStr" onclick="startTimer()">Start</button>
+        </div>
+        <!-- Time Remaining: -->
+        <span id="time_s"></span>
+    </header>
+    <div class="container">
+        <div class="piece-images">
+            <div id="ID1" class="img-div imagePiece1" ondrop="whenimageDrop(event)" ondragover="divAllowDropEvent(event)"><img src="./piece 9.png" alt="cake-piece" draggable="true" ondragstart="strastImageDrag(event)" id="imagePiece1" class="imagePiece9"></div>
+            <div id="ID2" class="img-div imagePiece2" ondrop="whenimageDrop(event)" ondragover="divAllowDropEvent(event)"><img src="./piece 1.png" alt="cake-piece" draggable="true" ondragstart="strastImageDrag(event)" id="imagePiece2" class="imagePiece1"></div>
+            <div id="ID3" class="img-div imagePiece3" ondrop="whenimageDrop(event)" ondragover="divAllowDropEvent(event)"><img src="./piece 4.png" alt="cake-piece" draggable="true" ondragstart="strastImageDrag(event)" id="imagePiece3" class="imagePiece4"></div>
+            <div id="ID4" class="img-div imagePiece4" ondrop="whenimageDrop(event)" ondragover="divAllowDropEvent(event)"><img src="./piece 2.png" alt="cake-piece" draggable="true" ondragstart="strastImageDrag(event)" id="imagePiece4" class="imagePiece2"></div>
+            <div id="ID5" class="img-div imagePiece5" ondrop="whenimageDrop(event)" ondragover="divAllowDropEvent(event)"><img src="./piece 5.png" alt="cake-piece" draggable="true" ondragstart="strastImageDrag(event)" id="imagePiece5" class="imagePiece5"></div>
+            <div id="ID6" class="img-div imagePiece6" ondrop="whenimageDrop(event)" ondragover="divAllowDropEvent(event)"><img src="./piece 8.png" alt="cake-piece" draggable="true" ondragstart="strastImageDrag(event)" id="imagePiece6" class="imagePiece8"></div>
+            <div id="ID7" class="img-div imagePiece7" ondrop="whenimageDrop(event)" ondragover="divAllowDropEvent(event)"><img src="./piece 6.png" alt="cake-piece" draggable="true" ondragstart="strastImageDrag(event)" id="imagePiece7" class="imagePiece6"></div>
+            <div id="ID8" class="img-div imagePiece8" ondrop="whenimageDrop(event)" ondragover="divAllowDropEvent(event)"><img src="./piece 3.png" alt="cake-piece" draggable="true" ondragstart="strastImageDrag(event)" id="imagePiece8" class="imagePiece3"></div>
+            <div id="ID9" class="img-div imagePiece9" ondrop="whenimageDrop(event)" ondragover="divAllowDropEvent(event)"><img src="./piece 7.png" alt="cake-piece" draggable="true" ondragstart="strastImageDrag(event)" id="imagePiece9" class="imagePiece7"></div>
+        </div>
+        <div class="demo-img">
+            <img src="./cake.png" alt="cake">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+<!-- Create a draggable image puzzle game using JavaScript || JS game development -->
